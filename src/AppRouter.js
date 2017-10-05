@@ -8,10 +8,6 @@ import ProjectsPage from './components/pages/ProjectsPage';
 import LinksPage from './components/pages/LinksPage';
 
 class AppRouter extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="AppRouter">
