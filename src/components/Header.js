@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './../App.css';
+import './Header.css';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
+import Paper from 'material-ui/Paper';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -26,7 +29,7 @@ class Header extends Component {
         return (
             <div className="Header">
                 <AppBar
-                    title="Title"
+                    title="Corey Kress"
                     iconClassNameRight="muidocs-icon-navigation-expand-more"
                     onLeftIconButtonTouchTap={this.handleMenuTouch}
                 />
@@ -35,8 +38,11 @@ class Header extends Component {
                     open={this.state.open}
                     onRequestChange={(open) => this.setState({open})}
                 >
-                  <MenuItem onClick={this.handleClose}>Menu Item</MenuItem>
-                  <MenuItem onClick={this.handleClose}>Menu Item 2</MenuItem>
+                  <Link to='/'><MenuItem onClick={this.handleClose}>Home</MenuItem></Link>
+                  <Link to='/about'><MenuItem onClick={this.handleClose}>About</MenuItem></Link>
+                  <Link to='/experience'><MenuItem onClick={this.handleClose}>Experience</MenuItem></Link>
+                  <Link to='/projects'><MenuItem onClick={this.handleClose}>Projects</MenuItem></Link>
+                  <Link to='/links'><MenuItem onClick={this.handleClose}>Links</MenuItem></Link>
                 </Drawer>
             </div>
     );
