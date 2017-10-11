@@ -4,7 +4,6 @@ import './Header.css';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import Paper from 'material-ui/Paper';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {

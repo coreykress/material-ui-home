@@ -5,7 +5,15 @@ class ProjectsPage extends Component {
     render() {
         return (
             <div className="ProjectsPage page">
-            Project
+                <div className="body-container">
+                    <div className="page-header">
+                        <h2>Projects</h2>
+                    </div>
+
+                    <div className="page-body">
+
+                    </div>
+                </div>
             </div>
     );
   }

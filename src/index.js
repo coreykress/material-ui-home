@@ -5,7 +5,7 @@ import App from './App';
 import  {
   blue900, cyan700,
   orange600,
-  grey100, grey300, grey400, grey500,
+  grey100, grey300, grey400, grey500, grey900,
   white, darkBlack, fullBlack,
 } from 'material-ui/styles/colors';
 import {fade} from 'material-ui/utils/colorManipulator';
@@ -24,7 +24,7 @@ const muiTheme = getMuiTheme({
         primary3Color: grey400,
         accent1Color: orange600,
         accent2Color: grey100,
-        accent3Color: grey500,
+        accent3Color: grey900,
         textColor: darkBlack,
         alternateTextColor: white,
         canvasColor: white,
