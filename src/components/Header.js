@@ -29,9 +29,11 @@ class Header extends Component {
         return (
             <div className="Header">
                 <AppBar
-                    title="Corey Kress"
-                    iconClassNameRight="muidocs-icon-navigation-expand-more"
+                    title={this.props.title}
+                    iconClassNameRight= "muidocs-icon-navigation-expand-more"
                     onLeftIconButtonTouchTap={this.handleMenuTouch}
+                    zDepth={0}
+                    style={{position: "fixed", width:"100%"}}
                 />
                 <Drawer
                     docked={false}

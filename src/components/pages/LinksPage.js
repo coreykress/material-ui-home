@@ -4,7 +4,7 @@ import './../../App.css';
 class LinksPage extends Component {
     render() {
         return (
-            <div className="LinksPage">
+            <div className="LinksPage page">
             Link
             </div>
     );

@@ -4,7 +4,7 @@ import './../../App.css';
 class ExperiencePage extends Component {
     render() {
         return (
-            <div className="ExperiencePage">
+            <div className="ExperiencePage page">
             Exp
             </div>
     );

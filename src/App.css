@@ -8,5 +8,9 @@
     height: 100%;
     display:flex;
     flex-flow: column;
-    background-color: red;
+    background-color: #fff;
+}
+
+.page {
+    margin-top: 50px;
 }

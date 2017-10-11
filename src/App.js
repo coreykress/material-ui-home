@@ -7,7 +7,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Header />
+                <Header
+                    className="header"
+                    title=""
+                 />
                 <div className="app-body">
                     <AppRouter />
                 </div>
