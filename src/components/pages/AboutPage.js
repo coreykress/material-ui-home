@@ -4,6 +4,11 @@ import './../../App.css';
 import './AboutPage.css';
 
 class AboutPage extends Component {
+    constructor(props) {
+        super(props);
+        window.scrollTo(0, 0);
+     }
+
     render() {
         return (
             <div className="AboutPage page">

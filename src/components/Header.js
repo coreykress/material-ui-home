@@ -39,11 +39,44 @@ class Header extends Component {
                     open={this.state.open}
                     onRequestChange={(open) => this.setState({open})}
                 >
-                  <Link to='/'><MenuItem onClick={this.handleClose}>Home</MenuItem></Link>
-                  <Link to='/about'><MenuItem onClick={this.handleClose}>About</MenuItem></Link>
-                  <Link to='/experience'><MenuItem onClick={this.handleClose}>Experience</MenuItem></Link>
-                  <Link to='/projects'><MenuItem onClick={this.handleClose}>Projects</MenuItem></Link>
-                  <Link to='/links'><MenuItem onClick={this.handleClose}>Links</MenuItem></Link>
+                    <AppBar
+                        title={this.props.title}
+                        iconClassNameRight= "muidocs-icon-navigation-expand-more"
+                        onLeftIconButtonTouchTap={this.handleMenuTouch}
+                        zDepth={0}
+                        style={{position: "fixed", width:"100%"}}
+                    />
+                    <div className="link-container">
+                        <Link style={{ textDecoration: 'none' }} to='/'>
+                            <MenuItem onClick={this.handleClose}>
+                                Home
+                            </MenuItem>
+                        </Link>
+
+                        <Link style={{ textDecoration: 'none' }} to='/about'>
+                            <MenuItem onClick={this.handleClose}>
+                                About
+                            </MenuItem>
+                        </Link>
+
+                        <Link style={{ textDecoration: 'none' }} to='/experience'>
+                            <MenuItem onClick={this.handleClose}>
+                                Experience
+                            </MenuItem>
+                        </Link>
+
+                        <Link style={{ textDecoration: 'none' }} to='/projects'>
+                            <MenuItem onClick={this.handleClose}>
+                                Projects
+                            </MenuItem>
+                        </Link>
+
+                        <Link style={{ textDecoration: 'none' }} to='/links'>
+                            <MenuItem onClick={this.handleClose}>
+                                Links
+                            </MenuItem>
+                        </Link>
+                    </div>
                 </Drawer>
             </div>
     );

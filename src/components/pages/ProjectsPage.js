@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './../../App.css';
 
 class ProjectsPage extends Component {
+    constructor(props) {
+        super(props);
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div className="ProjectsPage page">

@@ -3,6 +3,10 @@ import './../../App.css';
 import './HomePage.css';
 
 class HomePage extends Component {
+    componentDidMount() {
+        document.body.scrollTop = 0;
+    }
+
     render() {
         return (
             <div className="home-page page">
