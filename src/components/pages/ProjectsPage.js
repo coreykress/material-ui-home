@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './../../App.css';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+
 
 class ProjectsPage extends Component {
     constructor(props) {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import AppRouter from './AppRouter';
-import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
+import {Toolbar} from 'material-ui/Toolbar';
 
 class App extends Component {
     constructor(props) {

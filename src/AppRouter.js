@@ -6,6 +6,7 @@ import AboutPage from './components/pages/AboutPage';
 import ExperiencePage from './components/pages/ExperiencePage';
 import ProjectsPage from './components/pages/ProjectsPage';
 import LinksPage from './components/pages/LinksPage';
+import notFoundPage from './components/pages/notFoundPage';
 
 class AppRouter extends Component {
     render() {
@@ -17,6 +18,7 @@ class AppRouter extends Component {
                       <Route path='/Experience' component={ExperiencePage}/>
                       <Route path='/Projects' component={ProjectsPage}/>
                       <Route path='/Links' component={LinksPage}/>
+                      <Route path='*' component={notFoundPage} />
                 </Switch>
             </div>
     );
