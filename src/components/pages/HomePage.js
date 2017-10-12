@@ -15,7 +15,7 @@ class HomePage extends Component {
                     <h3>Software Developer</h3>
                 </div>
                 <div className="home-tag-section">
-                    <p className="home-tagline">Buffalo Native. Full stack web Developer</p>
+                    <p className="home-tagline">Buffalo Native. Full-Stack Web Developer</p>
                 </div>
             </div>
     );

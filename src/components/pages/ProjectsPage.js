@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './../../App.css';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-
+import ProjectCard from '../projectCard';
 
 class ProjectsPage extends Component {
     constructor(props) {
@@ -18,7 +17,12 @@ class ProjectsPage extends Component {
                     </div>
 
                     <div className="page-body">
-
+                        <ProjectCard
+                            title="Bloop.Video"
+                            subtitle="Winner Synacor Hackathon 2017"
+                            overlayTitle="Bloop"
+                            overlaySubTitle="YouTube meets Pop-up Video"
+                         />
                     </div>
                 </div>
             </div>
