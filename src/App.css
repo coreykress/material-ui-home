@@ -50,7 +50,17 @@
     padding: 0px 15px;
 }
 
+h1 {
+    font-size: 56px;
+    font-weight: 300;
+}
+
 @media screen and (max-width: 500px) {
+    h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+
     .page-header h2 {
         font-size: 20px;
     }

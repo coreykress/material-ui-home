@@ -5,6 +5,11 @@ class LinksPage extends Component {
     constructor(props) {
         super(props);
         window.scrollTo(0, 0);
+        this.goTo = this.goTo.bind(this);
+    }
+
+    goTo(url) {
+        return window.open(url);
     }
 
     render() {
@@ -16,6 +21,12 @@ class LinksPage extends Component {
                     </div>
 
                     <div className="page-body">
+                    <div className="link-list">
+                        <ul>
+                            <li onClick={() => this.goTo("http://www.github.com/coreykress")}>GitHub</li>
+                            <li onClick={() => this.goTo("https://www.linkedin.com/in/corey-kress/")}>LinkedIn</li>
+                        </ul>
+                    </div>
 
                     </div>
                 </div>
